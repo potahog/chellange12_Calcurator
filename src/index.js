@@ -13,6 +13,7 @@ function printNum(text) {
 }
 
 function setInputNum(text) {
+  console.log(text);
   if ((calcScreen.innerText === "0") | operating) {
     operating = false;
     calcScreen.innerText = "";
@@ -67,6 +68,7 @@ function handleClick(event) {
 
 function init() {
   setInputNum(0);
+  console.log("init");
   if (buttons) {
     buttons.forEach(function(btn) {
       btn.addEventListener("click", handleClick);
