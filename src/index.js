@@ -33,7 +33,8 @@ function setOperator(op) {
 }
 
 function operatorNum(op) {
-  const operator = op[op.search(/\W/g)];
+  console.log(op[op.search(/[\+\-\/\*\=]/g)]);
+  const operator = op[op.search(/[\+\-\/\*\=]/g)];
   const num = op.split(operator);
   switch (operator) {
     case "+":
@@ -44,6 +45,8 @@ function operatorNum(op) {
       return parseFloat(num[0]) * parseFloat(num[1]);
     case "/":
       return parseFloat(num[0]) / parseFloat(num[1]);
+      case "=":
+        return num[1];
     default:
       return num[0];
   }
