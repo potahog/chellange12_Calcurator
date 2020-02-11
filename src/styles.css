@@ -1,0 +1,88 @@
+body {
+  font-family: sans-serif;
+  background-color: #2f3640;
+}
+
+button {
+  width: 6em;
+  height: 3.5em;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 2px 2px 6px #718093, -2px -2px 6px #f5f6fa;
+  margin: 0.6em 0.4em;
+  font-weight: 800;
+  font-size: 1.25em;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  outline: none;
+  box-shadow: 2px 2px 6px #718093 inset, -2px -2px 6px #f5f6fa inset;
+}
+
+button:focus {
+  outline: none;
+}
+
+.calc {
+  width: 600px;
+}
+
+.calcScreen {
+  width: 100%;
+  height: 6em;
+}
+
+.calc__screen {
+  display: inline-block;
+  position: relative;
+  width: 68%;
+  height: 80%;
+  color: #dcdde1;
+  text-align: right;
+  font-size: 2.5em;
+  margin-right: 0.5em;
+  padding: 15px 0px 0px 0px;
+  font-weight: 900;
+}
+
+.calc__reset {
+  position: absolute;
+  background-color: #7f8fa6;
+  color: #dcdde1;
+}
+
+.numbers {
+  display: inline-block;
+  width: 71%;
+}
+
+.numbers button {
+  background-color: #353b48;
+  color: #dcdde1;
+}
+
+.numbers button.zero {
+  width: 13.25em;
+}
+
+.operators {
+  display: inline-block;
+  position: relative;
+  width: 24%;
+}
+
+.operators button {
+  background-color: #e84118;
+  color: #f5f6fa;
+}
+
+.operators .equal {
+  background-color: #353b48;
+  color: #dcdde1;
+  position: absolute;
+  right: 155px;
+}
